@@ -24,7 +24,8 @@ int maxm(int n){
 	int max = 1;
 	int M = 1;
 	for (int i = 0; i < n ; ++i) cout<<mysen[i];
-	cout << endl;
+	
+
 	int*myset = new int[2 * n - 2];
 	for (num = 1; num < n; num++){
 		myset[2*num-2]= mysen[num - 1] - 1;
@@ -38,13 +39,19 @@ int maxm(int n){
 	delete[]myset;
 	return max;
 }
+
 void main(){
-	int n = 100;
-	int sum = 0;
-
+	cout << "how many number in the stream:";
+	int num ,n= 0;
+	cin >> num;
+	cout << "how many result do you need:";
+	cin >> n;
+	int maxm_num,sum = 0;
 	for (int i = 0; i < n; i++){
-
-		cout<< maxm(8)<<" ";
+		maxm_num = maxm(num);
+		cout<< "    maximum number:"<<maxm_num<<" "<<endl;
+		sum += maxm_num;
 	}
+	cout << "mean:" << (double)sum/n;
 	system("pause");
 }
