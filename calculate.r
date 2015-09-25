@@ -28,8 +28,10 @@ for(i in sen){
 	gc()
 	return(max)
 }
-max=0
-for(i in 1:1000){
+sum=0
+num=1000
+for(i in 1:num){
 	n=8
-	max<-max+maxm(n)
+	sum<-sum+maxm(n)
 }
+mean=max/num
