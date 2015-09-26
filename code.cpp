@@ -44,7 +44,7 @@ void main(){
 	cout << "how many number in the stream:";
 	int num ,n= 0;
 	cin >> num;
-	cout << "how many result do you need:";
+	cout << "how many stimulation do you need:";
 	cin >> n;
 	int maxm_num,sum = 0;
 	for (int i = 0; i < n; i++){
